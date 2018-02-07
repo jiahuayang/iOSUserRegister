@@ -322,7 +322,8 @@
 				TargetAttributes = {
 					8363FECD202AE73F002482EE = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Manual;
+						DevelopmentTeam = JM67CGCM8N;
+						ProvisioningStyle = Automatic;
 					};
 					8363FEE6202AE73F002482EE = {
 						CreatedOnToolsVersion = 8.1;
@@ -562,12 +563,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JM67CGCM8N;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UserRegister/UserRegister.pch;
 				INFOPLIST_FILE = UserRegister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iosapp.UserRegister;
+				PRODUCT_BUNDLE_IDENTIFIER = iosapp.class2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -576,12 +579,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = JM67CGCM8N;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = UserRegister/UserRegister.pch;
 				INFOPLIST_FILE = UserRegister/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = iosapp.UserRegister;
+				PRODUCT_BUNDLE_IDENTIFIER = iosapp.class2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

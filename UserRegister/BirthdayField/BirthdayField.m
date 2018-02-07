@@ -16,8 +16,7 @@
 @implementation BirthdayField
 
 // 初始化文字的方法
-- (void)initialText
-{
+- (void)initialText{
     [self dateChamge:self.datePicker];
 }
 
@@ -31,6 +30,7 @@
 }
 - (void)awakeFromNib
 {
+    [super awakeFromNib];
     [self setUp];
 }
 

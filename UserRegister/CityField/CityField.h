@@ -10,4 +10,6 @@
 
 @interface CityField : UITextField
 
+- (void)initialText;
+
 @end

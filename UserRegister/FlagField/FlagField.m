@@ -14,6 +14,7 @@
 
 //array保存是模型，用可变 NSMutableArray
 @property (nonatomic, strong) NSMutableArray* flags;
+@property (nonatomic, assign) BOOL isInitial;
 
 @end
 
@@ -26,6 +27,16 @@
     // Drawing code
 }
 */
+
+
+// 初始化文字的方法
+- (void)initialText{
+    if (_isInitial == NO) {
+    [self pickerView:nil didSelectRow:0 inComponent:0];
+
+        _isInitial = YES;
+    }
+}
 
 
 - (NSMutableArray *)flags{
@@ -52,6 +63,7 @@
 
 // 只要从xib或者stroyboard加载就会调用这个方法,只会调用一次
 - (void)awakeFromNib{
+    [super awakeFromNib];
     [self setUp];
 }
 
@@ -106,7 +118,7 @@
 }
 
 - (CGFloat)pickerView:(UIPickerView *)pickerView rowHeightForComponent:(NSInteger)component{
-    return 100;
+    return 110;
 }
 
 // 选中某一行的时候调用

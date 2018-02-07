@@ -10,6 +10,6 @@
 
 @interface FlagField : UITextField
 
-
+- (void)initialText;
 
 @end

@@ -33,7 +33,7 @@
     // 给控件赋值
     _nameView.text = flag.name;
     
-    XLog(@"%@", [flag.icon class]);
+//    XLog(@"%@", [flag.icon class]);
     
     _iconView.image = flag.icon;
     

@@ -10,4 +10,6 @@
 
 @interface BirthdayField : UITextField
 
+- (void)initialText;
+
 @end
