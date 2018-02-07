@@ -34,6 +34,10 @@
 		8363FF2D202B0869002482EE /* Flag.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363FF2C202B0869002482EE /* Flag.m */; };
 		8363FF30202B0BA2002482EE /* FlagView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363FF2F202B0BA2002482EE /* FlagView.m */; };
 		8363FF32202B0BCC002482EE /* FlagView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8363FF31202B0BCC002482EE /* FlagView.xib */; };
+		8363FF61202B23AD002482EE /* BirthdayField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363FF60202B23AD002482EE /* BirthdayField.m */; };
+		8363FF64202B2767002482EE /* provinces.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8363FF63202B2767002482EE /* provinces.plist */; };
+		8363FF67202B2782002482EE /* CityField.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363FF66202B2782002482EE /* CityField.m */; };
+		8363FF6A202B27B9002482EE /* Province.m in Sources */ = {isa = PBXBuildFile; fileRef = 8363FF69202B27B9002482EE /* Province.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,13 @@
 		8363FF2E202B0BA2002482EE /* FlagView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlagView.h; sourceTree = "<group>"; };
 		8363FF2F202B0BA2002482EE /* FlagView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlagView.m; sourceTree = "<group>"; };
 		8363FF31202B0BCC002482EE /* FlagView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlagView.xib; sourceTree = "<group>"; };
+		8363FF5F202B23AD002482EE /* BirthdayField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirthdayField.h; sourceTree = "<group>"; };
+		8363FF60202B23AD002482EE /* BirthdayField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirthdayField.m; sourceTree = "<group>"; };
+		8363FF63202B2767002482EE /* provinces.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = provinces.plist; sourceTree = "<group>"; };
+		8363FF65202B2782002482EE /* CityField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CityField.h; sourceTree = "<group>"; };
+		8363FF66202B2782002482EE /* CityField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CityField.m; sourceTree = "<group>"; };
+		8363FF68202B27B9002482EE /* Province.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Province.h; sourceTree = "<group>"; };
+		8363FF69202B27B9002482EE /* Province.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Province.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +154,8 @@
 		8363FED0202AE73F002482EE /* UserRegister */ = {
 			isa = PBXGroup;
 			children = (
+				8363FF62202B272A002482EE /* CityField */,
+				8363FF5E202B2384002482EE /* BirthdayField */,
 				8363FF06202AFB65002482EE /* FlagField */,
 				8363FED4202AE73F002482EE /* AppDelegate.h */,
 				8363FED5202AE73F002482EE /* AppDelegate.m */,
@@ -219,6 +232,27 @@
 				8363FF1B202B071D002482EE /* zhongguo.jpg */,
 			);
 			path = guoqi;
+			sourceTree = "<group>";
+		};
+		8363FF5E202B2384002482EE /* BirthdayField */ = {
+			isa = PBXGroup;
+			children = (
+				8363FF5F202B23AD002482EE /* BirthdayField.h */,
+				8363FF60202B23AD002482EE /* BirthdayField.m */,
+			);
+			path = BirthdayField;
+			sourceTree = "<group>";
+		};
+		8363FF62202B272A002482EE /* CityField */ = {
+			isa = PBXGroup;
+			children = (
+				8363FF63202B2767002482EE /* provinces.plist */,
+				8363FF65202B2782002482EE /* CityField.h */,
+				8363FF66202B2782002482EE /* CityField.m */,
+				8363FF68202B27B9002482EE /* Province.h */,
+				8363FF69202B27B9002482EE /* Province.m */,
+			);
+			path = CityField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -331,6 +365,7 @@
 			files = (
 				8363FEE1202AE73F002482EE /* LaunchScreen.storyboard in Resources */,
 				8363FF21202B071D002482EE /* hanguo.gif in Resources */,
+				8363FF64202B2767002482EE /* provinces.plist in Resources */,
 				8363FEDE202AE73F002482EE /* Assets.xcassets in Resources */,
 				8363FF22202B071D002482EE /* helan.gif in Resources */,
 				8363FF28202B071D002482EE /* ydl.gif in Resources */,
@@ -375,8 +410,11 @@
 				8363FF30202B0BA2002482EE /* FlagView.m in Sources */,
 				8363FF2D202B0869002482EE /* Flag.m in Sources */,
 				8363FF09202AFBD4002482EE /* FlagField.m in Sources */,
+				8363FF67202B2782002482EE /* CityField.m in Sources */,
+				8363FF6A202B27B9002482EE /* Province.m in Sources */,
 				8363FED9202AE73F002482EE /* ViewController.m in Sources */,
 				8363FED6202AE73F002482EE /* AppDelegate.m in Sources */,
+				8363FF61202B23AD002482EE /* BirthdayField.m in Sources */,
 				8363FED3202AE73F002482EE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -617,6 +655,7 @@
 				8363FEFD202AE73F002482EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8363FEFE202AE73F002482EE /* Build configuration list for PBXNativeTarget "UserRegisterTests" */ = {
 			isa = XCConfigurationList;
@@ -625,6 +664,7 @@
 				8363FF00202AE73F002482EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8363FF01202AE73F002482EE /* Build configuration list for PBXNativeTarget "UserRegisterUITests" */ = {
 			isa = XCConfigurationList;
@@ -633,6 +673,7 @@
 				8363FF03202AE73F002482EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
